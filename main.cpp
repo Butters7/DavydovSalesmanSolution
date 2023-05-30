@@ -129,14 +129,14 @@ void runForYandexContest(std::istream& input, std::ostream& output) {
 void runForSalesmanTests() {
 	FullyConnectedGraph* graph = nullptr;
 
-	for (size_t i = 2; i < 10; i++) {
+	for (size_t i = 2; i <= 10; i++) {
 
 		std::vector<double> approximation_ratio;
 		double sum_approximation_ratio = 0;
 		double average_approximation = 0;
 		double mean_square_deviation = 0;
 
-		for (size_t j = 0; j <= 10; ++j) {
+		for (size_t j = 0; j < 10; ++j) {
 			graph = new FullyConnectedGraph(i);
 			std::vector<Edge> edges = graph->getEdgesOfGraph();
 
